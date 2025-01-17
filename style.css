@@ -95,6 +95,8 @@ button {
   overflow: hidden;  
   border-radius: 40px;  
   margin-bottom: 1rem;
+  background-color: #3c62df;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
 }  
 button span{
   position: relative;
@@ -105,7 +107,7 @@ button span{
 }
 button .wave{
   position: absolute;
-  top: -15px;
+  top: -5%;
   left: 0;
   width: 100%;
   height: 200%;
@@ -123,11 +125,11 @@ button .wave::before{
   top: -25px;
   left: 50%;
   transform: translate(-40% , -75%);
-  background-color: #fff;
+  background-color: #060cc1;
 
 }
 button .wave::before{
-  border-radius: 48%;
+  border-radius: 40%;
   background-color: rgba(20, 20, 20, 0.2);
   animation: animate 5s linear infinite;
 }
@@ -213,10 +215,10 @@ button:hover .wave{
   button .wave::after,
   button .wave::before{
     content: '';
-    width: 95%;
-    height: 250%;
+    width: 100%;
+    height: 500%;
     position: absolute; 
-    top: -15px;
+    top: -70px;
     left: 50%;
     transform: translate(-40% , -75%);
     background-color: #fff;
