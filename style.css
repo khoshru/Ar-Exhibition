@@ -36,11 +36,10 @@ body {
 
 .sneaker {  
   min-height: 35vh;  
-  /* display: flex;   */
   justify-content: center;  
   align-items: top;  
   position: relative;  
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
  
 }  
 
@@ -62,7 +61,8 @@ body {
 }  
 
 .info {  
-  padding: 0 1.5rem;  
+  padding: 0 1.5rem; 
+  padding-top: 0; 
   
   text-align: right;  
   flex-grow: 1; 
