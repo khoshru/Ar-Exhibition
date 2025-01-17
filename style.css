@@ -24,7 +24,7 @@ body {
 }  
 
 .card {  
-  min-height: 60vh;  
+  min-height: 65vh;  
   width: auto;  
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);  
   border-radius: 30px;  
@@ -33,17 +33,23 @@ body {
   flex-direction: column;   
   justify-content: space-between;   
 } 
+
 .sneaker {  
-  position: relative;  /* Ensuring it has a positioning context */  
-  z-index: 0; /* تنظیم z-index */  
-}
+  min-height: 35vh;  
+  /* display: flex;   */
+  justify-content: center;  
+  align-items: top;  
+  position: relative;  
+  padding-bottom: 0.5rem;
+ 
+}  
 
 .sneaker img {  
-  border-radius: 30px;  
+  border-radius: 30px;
   width: 100%;  
-  height: 100%;  
-  margin-bottom: 0; /* اطمینان حاصل کنید که margin-bottom وجود ندارد */  
-}
+  height: 105%;
+  
+}  
 
 .back {  
   position: absolute;  
@@ -54,22 +60,20 @@ body {
   text-decoration: none;
   z-index: 2;
 }  
+
 .info {  
-  position: absolute;  
-  bottom: 20px; 
-  left: 0; 
-  right: 0; 
-  padding: 0 1.5rem;   
+  padding: 0 1.5rem;  
+  
   text-align: right;  
-  z-index: 1; 
-}
+  flex-grow: 1; 
+  top: -20px;
+}  
+
 .info h1 {  
-  height: 100%;  
   font-size: 1.8rem;  
   transition: all 0.75s ease-out;  
-  margin-top: 0rem;
-  margin-bottom: 0.2rem;   
-}
+  margin-bottom: 0.2rem;
+}  
 
 .info h3 {  
   font-size: 1rem;  
@@ -161,13 +165,7 @@ button:hover .wave{
   .sneaker img {  
     width: 100%;  
   }  
-  .info {  
-    position: static; /* بازگشت به حالت پیش‌فرض */  
-    padding: 0 2rem;  
-    margin-top: 1rem; /* تنظیم فاصله */  
-    z-index: auto; /* برگرداندن z-index به حالت پیش‌فرض */  
-    /* می‌توانید به صورت دلخواه فاصله بالا را تنظیم کنید */  
-  }  
+
   .info h1 {  
     /* padding: 0 2rem; */
     padding: 1rem;
