@@ -28,9 +28,9 @@ body {
   width: auto;  
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);  
   border-radius: 30px;  
-  /* display: flex;    */
+  display: flex;   
   flex-direction: column;   
-  justify-content: space-between;   
+  /* justify-content: space-between;    */
 } 
 .sneaker {  
   /* for pic */
